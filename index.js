@@ -73,7 +73,7 @@ client.on('message', msg => {
     }
     const ddObj = ddArray[getRandomInt(ddArray.length)]
     let ddMessage = ddObj.message.replace("\\n", "\n")
-    const embed = new Discord.RichEmbed()
+    const embed = new Discord.MessageEmbed()
       // Set the title of the field
       // .setTitle('A slick little embed')
       // Set the color of the embed
@@ -99,7 +99,7 @@ client.on('message', msg => {
       listenThinkingSnapshot()
     }
     const thinking = thinkingArray[getRandomInt(thinkingArray.length)]
-    const embed = new Discord.RichEmbed()
+    const embed = new Discord.MessageEmbed()
       .setTitle(thinking.name)
       .setImage(thinking.url)
 
